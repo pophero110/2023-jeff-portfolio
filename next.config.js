@@ -6,6 +6,7 @@ const nextConfig = {
     includePaths: [path.join(__dirname, "styles")],
   },
   output: "export",
+  distDir: "docs",
 };
 
 module.exports = nextConfig;
