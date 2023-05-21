@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "./index.module.scss";
-import Header from "@/components/header/header";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -14,7 +14,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className={styles.h1}>Hello, Next.js!</h1>
-      <Header></Header>
     </>
   );
 }
