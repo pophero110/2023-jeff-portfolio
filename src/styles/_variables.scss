@@ -1,0 +1,38 @@
+// Color
+$primary-color: #26282a;
+$secondary-color: #04e9ac;
+$accent-color: #04b3e9;
+$blue-gradient-color: linear-gradient(
+  226.8deg,
+  #157a99 0%,
+  #04b3e9 51.04%,
+  #1c97bd 100%
+);
+$white: #ffffff;
+
+// Font
+$primary-font-family: "Lato", sans-serif;
+$number-font-family: "Fira Code", monospace;
+$primary-font-color: $white;
+$secondary-font-color: #c5c6c7;
+$tertiary-font-color: #929394;
+
+// Visual Effectsw
+$navLinkDropshadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+$text-dropshadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$border-radius: 4px;
+$lg-border-raduis: 16px;
+
+@mixin numberStyle {
+  color: $secondary-color;
+  font-family: $number-font-family;
+  margin-right: 0.5rem;
+  text-shadow: none;
+}
+
+@mixin buttonStyle {
+  color: $secondary-color;
+  border: 1px solid $secondary-color;
+  border-radius: $border-radius;
+  padding: 1.6rem;
+}
