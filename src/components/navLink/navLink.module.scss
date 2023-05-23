@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.navLink {
+  list-style: none;
+  color: $primary-font-color;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  a {
+    text-shadow: $navLinkDropshadow;
+    font-weight: 900;
+    letter-spacing: 0.16rem;
+  }
+
+  a:not(:last-child) {
+    margin-right: 5rem;
+  }
+}
+
+.resumeLink {
+  @include buttonStyle;
+}
+
+.contactLink {
+  color: $secondary-color;
+}
+
+.number {
+  @include numberStyle;
+}
