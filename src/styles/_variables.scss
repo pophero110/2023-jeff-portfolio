@@ -37,4 +37,23 @@ $transition: all 0.25s $timing-function;
   border: 1px solid $secondary-color;
   border-radius: $border-radius;
   padding: 1.6rem;
+@mixin bottomLine {
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: $tertiary-font-color;
+    margin-top: 2.4rem;
+  }
+}
+
+@mixin hoverTranslateY {
+  transition: $transition;
+  &:hover {
+    transform: translateY(-3px);
+    color: $secondary-color;
+  }
+}
 }
