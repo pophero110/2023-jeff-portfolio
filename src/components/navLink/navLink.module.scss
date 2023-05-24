@@ -6,10 +6,18 @@
   font-size: 1.6rem;
   display: flex;
   align-items: center;
+
+  li {
+    cursor: pointer;
+  }
+
   a {
-    text-shadow: $navLinkDropshadow;
     font-weight: 900;
     letter-spacing: 0.16rem;
+    &:hover {
+      text-shadow: $navLinkDropshadow;
+      color: $secondary-color;
+    }
   }
 
   a:not(:last-child) {
@@ -18,11 +26,8 @@
 }
 
 .resumeLink {
+  display: inline-block;
   @include buttonStyle;
-}
-
-.contactLink {
-  color: $secondary-color;
 }
 
 .number {
