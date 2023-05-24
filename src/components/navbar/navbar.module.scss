@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3.2rem;
+  position: fixed;
+  transition: $transition;
+  z-index: 999;
+}

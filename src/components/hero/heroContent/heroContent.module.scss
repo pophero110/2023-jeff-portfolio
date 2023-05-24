@@ -1,0 +1,49 @@
+@import "../../../styles/variables";
+
+.heroContent {
+  width: 58.33333333%;
+  height: 49.35185185%;
+  margin-right: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: $lg-border-raduis;
+  background: linear-gradient(
+    64.28deg,
+    rgba(4, 179, 233, 0.3) 50.33%,
+    rgba(0, 83, 61, 0) 90%
+  );
+  padding: 4%;
+  display: flex;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & > :not(:last-child) {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &__greeting {
+    font-size: 1vw;
+    color: $primary-color;
+    text-shadow: $text-dropshadow;
+  }
+
+  &__name {
+    color: $primary-font-color;
+    font-size: 7.2vw;
+    text-shadow: $text-dropshadow;
+    font-weight: 400;
+    line-height: 85%;
+  }
+  &__skill {
+    font-weight: 400;
+    text-shadow: $text-dropshadow;
+    font-size: 2.4vw;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  &__summary {
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: rgba(255, 255, 255, 0.51);
+  }
+}

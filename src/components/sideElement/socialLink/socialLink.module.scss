@@ -1,0 +1,15 @@
+@import "../../../styles/variables";
+.socialLink {
+  @include bottomLine;
+  display: flex;
+  flex-direction: column;
+  & a {
+    @include hoverTranslateY;
+    &:hover svg path {
+      stroke: $secondary-color;
+    }
+  }
+  & :not(:last-child) {
+    padding-bottom: 2.4rem;
+  }
+}

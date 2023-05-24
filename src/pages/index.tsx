@@ -1,6 +1,10 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import styles from "./index.module.scss";
+import Navbar from "@/components/navbar/navbar";
+import Hero from "@/components/hero/hero";
+import SideElement from "@/components/sideElement/sideElement";
+import SocialLink from "@/components/sideElement/socialLink/socialLink";
+import EmailLink from "@/components/sideElement/emailLink/emailLink";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +17,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className={styles.h1}>Hello, Next.js!</h1>
+      <Navbar></Navbar>
+      <Hero></Hero>
+      <SideElement left>
+        <SocialLink></SocialLink>
+      </SideElement>
+      <SideElement>
+        <EmailLink></EmailLink>
+      </SideElement>
     </>
   );
 }

@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.navLink {
+  list-style: none;
+  color: $primary-font-color;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+
+  li {
+    cursor: pointer;
+  }
+
+  a {
+    font-weight: 900;
+    letter-spacing: 0.16rem;
+    &:hover {
+      text-shadow: $navLinkDropshadow;
+      color: $secondary-color;
+    }
+  }
+
+  a:not(:last-child) {
+    margin-right: 5rem;
+  }
+}
+
+.resumeLink {
+  display: inline-block;
+  @include buttonStyle;
+}
+
+.number {
+  @include numberStyle;
+}

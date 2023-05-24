@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+.logo {
+  cursor: pointer;
+  &__letter {
+    transform-origin: center;
+    transition: $transition;
+  }
+  &__blackCircle {
+    transition: $transition;
+  }
+  &:hover &__letter {
+    animation: rotate 2s $timing-function infinite;
+  }
+
+  &:hover &__blackCircle {
+    transform: scaleX(0.78);
+  }
+}
