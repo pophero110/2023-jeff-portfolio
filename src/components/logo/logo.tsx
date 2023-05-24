@@ -1,13 +1,15 @@
+import styles from "./logo.module.scss";
 export default function Logo() {
   return (
     <svg
+      className={styles.logo}
       width="76"
       height="87"
       viewBox="0 0 76 87"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g filter="url(#filter0_b_56_40)">
+      <g className={styles.logo__whiteCircle} filter="url(#filter0_b_56_40)">
         <ellipse
           cx="33.6123"
           cy="76.5"
@@ -18,7 +20,7 @@ export default function Logo() {
           fillOpacity="0.8"
         />
       </g>
-      <g filter="url(#filter1_b_56_40)">
+      <g className={styles.logo__blackCircle} filter="url(#filter1_b_56_40)">
         <ellipse
           cx="43.9886"
           cy="75.9403"
@@ -28,7 +30,7 @@ export default function Logo() {
           fill="#181E1C"
         />
       </g>
-      <g filter="url(#filter2_i_56_40)">
+      <g className={styles.logo__letter} filter="url(#filter2_i_56_40)">
         <path
           d="M38.2381 56.7661L61.6957 16.2369L75.8951 24.4552L52.4376 64.9845C50.1521 68.9332 47.2658 71.8302 43.7787 73.6754C40.3186 75.5362 36.5852 76.3722 32.5783 76.1834C28.6141 75.9832 24.7252 74.7795 20.9116 72.5723C16.9629 70.2868 13.8303 67.5891 11.5141 64.4793C9.22486 61.3851 7.9996 57.9499 7.83829 54.1736C7.70402 50.413 8.87355 46.396 11.3469 42.1227L25.6274 50.388C24.4691 52.3894 23.791 54.0912 23.5933 55.4933C23.4113 56.8683 23.6335 58.044 24.2599 59.0204C24.929 59.9853 25.9262 60.8514 27.2515 61.6184C28.5498 62.3698 29.833 62.6792 31.1012 62.5467C32.4122 62.4028 33.6711 61.8496 34.878 60.8873C36.1006 59.8978 37.2206 58.5241 38.2381 56.7661Z"
           fill="#04E9AC"
