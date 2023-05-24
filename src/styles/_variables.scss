@@ -56,4 +56,12 @@ $transition: all 0.25s $timing-function;
     color: $secondary-color;
   }
 }
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
