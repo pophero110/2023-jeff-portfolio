@@ -1,8 +1,10 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar/navbar";
-import styles from "@/styles/Home.module.css";
 import Hero from "@/components/hero/hero";
+import SideElement from "@/components/sideElement/sideElement";
+import SocialLink from "@/components/sideElement/socialLink/socialLink";
+import EmailLink from "@/components/sideElement/emailLink/emailLink";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +19,12 @@ export default function Home() {
       </Head>
       <Navbar></Navbar>
       <Hero></Hero>
+      <SideElement left>
+        <SocialLink></SocialLink>
+      </SideElement>
+      <SideElement>
+        <EmailLink></EmailLink>
+      </SideElement>
     </>
   );
 }
