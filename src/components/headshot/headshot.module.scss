@@ -20,7 +20,7 @@
   &__image {
     object-fit: cover;
     z-index: 2;
-    transition: transform 0.5s ease;
+    transition: $transition;
     position: absolute;
     top: 0;
     left: 0;
@@ -42,7 +42,7 @@
   }
 
   &__background {
-    transition: transform 0.5s ease;
+    transition: $transition;
     width: 100%;
     height: 100%;
     background: $blue-gradient-color;
@@ -52,7 +52,7 @@
   }
 
   &__borderBox {
-    transition: transform 0.5s ease;
+    transition: $transition;
     border: 2px solid $white;
     width: 100%;
     height: 100%;
