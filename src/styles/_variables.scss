@@ -37,6 +37,13 @@ $transition: all 0.25s $timing-function;
   border: 1px solid $secondary-color;
   border-radius: $border-radius;
   padding: 1.6rem;
+  transition: $transition;
+  &:hover {
+    box-shadow: 3px 3px 0 0 $secondary-color;
+    transform: translate(-4px, -4px);
+  }
+}
+
 @mixin bottomLine {
   &::after {
     content: "";
