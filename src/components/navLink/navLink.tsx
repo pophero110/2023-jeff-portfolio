@@ -3,14 +3,10 @@ export default function NavLink() {
   return (
     <ul className={styles.navLink}>
       <li>
-        <NavLinkItem number="01." text="About" />
-        <NavLinkItem number="02." text="Project" />
-        <NavLinkItem number="03." text="Experience" />
-        <NavLinkItem
-          number="04."
-          text="Contact"
-          className={styles.contactLink}
-        />
+        <NavLinkItem number="01." text="About" href="#about" />
+        <NavLinkItem number="02." text="Project" href="#project" />
+        <NavLinkItem number="03." text="Experience" href="#experience" />
+        <NavLinkItem number="04." text="Contact" href="#contact" />
         <a className={styles.resumeLink} href="#">
           Resume
         </a>
@@ -22,16 +18,12 @@ export default function NavLink() {
 interface NavLinkItemProps {
   number: string;
   text: string;
-  className?: string;
+  href?: string;
 }
 
-const NavLinkItem: React.FC<NavLinkItemProps> = ({
-  number,
-  text,
-  className,
-}) => {
+const NavLinkItem: React.FC<NavLinkItemProps> = ({ number, text, href }) => {
   return (
-    <a className={className} href="#">
+    <a href={href}>
       <span className={styles.number}>{number}</span>
       {text}
     </a>
