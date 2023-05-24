@@ -18,6 +18,7 @@ body {
   overflow-x: hidden;
   background: $primary-color;
   font-family: $primary-font-family;
+  scroll-behavior: smooth;
 }
 
 a {
