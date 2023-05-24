@@ -1,0 +1,10 @@
+.sideElement {
+  position: fixed;
+  bottom: 0;
+  &__right {
+    right: 2.5%;
+  }
+  &__left {
+    left: 2.5%;
+  }
+}
