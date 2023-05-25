@@ -1,7 +1,7 @@
 import HeadShot from "../headshot/headshot";
-import styles from "./hero.module.scss";
+import styles from "./heroSection.module.scss";
 import HeroContent from "./heroContent/heroContent";
-export default function Hero() {
+export default function HeroSection() {
   return (
     <section className={styles.hero}>
       <HeroContent></HeroContent>
