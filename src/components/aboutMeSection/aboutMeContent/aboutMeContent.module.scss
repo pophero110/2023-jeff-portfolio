@@ -1,0 +1,27 @@
+@import "../../../styles/variables";
+.aboutMeContent {
+  font-size: $h3-font-size;
+  width: 100%;
+  color: $tertiary-font-color;
+  line-height: 2.6rem;
+  &__skillsList {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    list-style: none;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    &__item {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 1rem;
+
+      &::before {
+        content: "▹";
+        position: absolute;
+        left: 0px;
+        color: $secondary-color;
+        font-size: 2rem;
+      }
+    }
+  }
+}
