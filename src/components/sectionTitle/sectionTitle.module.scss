@@ -1,0 +1,13 @@
+@import "../../styles/variables";
+.sectionTitle {
+  @include numberedHeading;
+  @include rightLine;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+  margin: 2.4rem 0;
+  &::before {
+    font-size: 1.5vw;
+  }
+}
