@@ -16,7 +16,9 @@ $number-font-family: "Fira Code", monospace;
 $primary-font-color: $white;
 $secondary-font-color: #c5c6c7;
 $tertiary-font-color: #929394;
-
+$h1-font-size: 7.2vw;
+$h2-font-size: 2.4vw;
+$h3-font-size: 1.2vw;
 // Visual Effectsw
 $navLinkDropshadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
 $text-dropshadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -29,7 +31,6 @@ $transition: all 0.25s $timing-function;
   color: $secondary-color;
   font-family: $number-font-family;
   margin-right: 0.5rem;
-  text-shadow: none;
 }
 
 @mixin buttonStyle {
@@ -53,6 +54,30 @@ $transition: all 0.25s $timing-function;
     margin: 0px auto;
     background-color: $tertiary-font-color;
     margin-top: 2.4rem;
+  }
+}
+
+@mixin numberedHeading {
+  &::before {
+    bottom: 4px;
+    counter-increment: section 1;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: $secondary-color;
+    font-family: $number-font-family;
+    font-size: $h3-font-size;
+  }
+}
+
+@mixin rightLine {
+  &::after {
+    content: "";
+    display: block;
+    top: -5px;
+    width: 40%;
+    height: 1px;
+    margin-left: 2rem;
+    background-color: $tertiary-font-color;
   }
 }
 
