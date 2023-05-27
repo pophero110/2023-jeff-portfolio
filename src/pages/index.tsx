@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Navbar from "@/components/navbar/navbar";
-import HeroSection from "@/components/heroSection/heroSection";
+import HeroSection from "@/components/sections/heroSection/heroSection";
 import SideElement from "@/components/sideElement/sideElement";
 import SocialLink from "@/components/sideElement/socialLink/socialLink";
 import EmailLink from "@/components/sideElement/emailLink/emailLink";
-import AboutMeSection from "@/components/aboutMeSection/aboutMeSection";
+import AboutMeSection from "@/components/sections/aboutMeSection/aboutMeSection";
 import styles from "./index.module.scss";
-import ExperienceSection from "@/components/experienceSection/experienceSection";
+import ExperienceSection from "@/components/sections/experienceSection/experienceSection";
 export default function Home() {
   return (
     <>

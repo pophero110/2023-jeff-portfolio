@@ -1,4 +1,4 @@
-import SectionTitle from "../sectionTitle/sectionTitle";
+import SectionTitle from "../../sectionTitle/sectionTitle";
 import ExperienceContent from "./experienceContent/experienceContent";
 import styles from "./experienceSection.module.scss";
 export default function ExperienceSection() {

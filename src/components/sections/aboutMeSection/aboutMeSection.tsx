@@ -1,4 +1,4 @@
-import SectionTitle from "../sectionTitle/sectionTitle";
+import SectionTitle from "../../sectionTitle/sectionTitle";
 import AboutMeContent from "./aboutMeContent/aboutMeContent";
 import styles from "./aboutMeSection.module.scss";
 export default function AboutMeSection() {
