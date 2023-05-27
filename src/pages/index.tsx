@@ -8,6 +8,7 @@ import AboutMeSection from "@/components/sections/aboutMeSection/aboutMeSection"
 import styles from "./index.module.scss";
 import ExperienceSection from "@/components/sections/experienceSection/experienceSection";
 import ProjectSection from "@/components/sections/projectSection/projectSection";
+import ContactSection from "@/components/sections/contactSection/contactSection";
 export default function Home() {
   return (
     <>
@@ -23,6 +24,7 @@ export default function Home() {
         <AboutMeSection></AboutMeSection>
         <ExperienceSection></ExperienceSection>
         <ProjectSection></ProjectSection>
+        <ContactSection></ContactSection>
       </main>
 
       <SideElement left>
