@@ -4,8 +4,8 @@ export default function NavLink() {
     <ul className={styles.navLink}>
       <li>
         <NavLinkItem number="01." text="About" href="#about" />
-        <NavLinkItem number="02." text="Project" href="#project" />
-        <NavLinkItem number="03." text="Experience" href="#experience" />
+        <NavLinkItem number="02." text="Experience" href="#experience" />
+        <NavLinkItem number="03." text="Project" href="#project" />
         <NavLinkItem number="04." text="Contact" href="#contact" />
         <a className={styles.resumeLink} href="#">
           Resume
