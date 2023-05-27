@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+// https://github.com/bchiang7/v4/blob/main/src/components/sections/jobs.js
+.tabHighlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border-radius: $border-radius;
+  width: 3px;
+  height: $tab-height;
+  background: $secondary-color;
+  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-delay: 0.1s;
+}

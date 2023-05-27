@@ -1,5 +1,4 @@
 import styles from "./headshot.module.scss";
-import Image from "next/image";
 export default function HeadShot() {
   return (
     <div className={styles.headShot}>

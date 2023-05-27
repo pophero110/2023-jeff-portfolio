@@ -6,6 +6,7 @@ import SocialLink from "@/components/sideElement/socialLink/socialLink";
 import EmailLink from "@/components/sideElement/emailLink/emailLink";
 import AboutMeSection from "@/components/aboutMeSection/aboutMeSection";
 import styles from "./index.module.scss";
+import ExperienceSection from "@/components/experienceSection/experienceSection";
 export default function Home() {
   return (
     <>
@@ -19,6 +20,7 @@ export default function Home() {
       <main className={styles.main}>
         <HeroSection></HeroSection>
         <AboutMeSection></AboutMeSection>
+        <ExperienceSection></ExperienceSection>
       </main>
 
       <SideElement left>

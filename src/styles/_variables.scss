@@ -1,5 +1,6 @@
 // Color
 $primary-color: #26282a;
+$light-primary-color: #393d41;
 $secondary-color: #04e9ac;
 $accent-color: #04b3e9;
 $blue-gradient-color: linear-gradient(
@@ -17,8 +18,10 @@ $primary-font-color: $white;
 $secondary-font-color: #c5c6c7;
 $tertiary-font-color: #929394;
 $h1-font-size: 7.2vw;
-$h2-font-size: 2.4vw;
+$h2-font-size: 1.8vw;
 $h3-font-size: 1.2vw;
+$h4-font-size: 0.8vw;
+
 // Visual Effectsw
 $navLinkDropshadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
 $text-dropshadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -26,6 +29,9 @@ $border-radius: 4px;
 $lg-border-raduis: 16px;
 $timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 $transition: all 0.25s $timing-function;
+
+// Heigth & Width
+$tab-height: 5rem;
 
 @mixin numberStyle {
   color: $secondary-color;
@@ -75,9 +81,9 @@ $transition: all 0.25s $timing-function;
     display: block;
     top: -5px;
     width: 40%;
-    height: 1px;
+    height: 2px;
     margin-left: 2rem;
-    background-color: $tertiary-font-color;
+    background-color: $secondary-font-color;
   }
 }
 
@@ -86,6 +92,38 @@ $transition: all 0.25s $timing-function;
   &:hover {
     transform: translateY(-3px);
     color: $secondary-color;
+  }
+}
+
+@mixin listStyle {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  &::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: $secondary-color;
+    font-size: 2rem;
+  }
+}
+
+@mixin textHoverUnderline {
+  display: inline-block;
+  &::after {
+    transition: $transition;
+    content: "";
+    display: block;
+    width: 0px;
+    height: 1px;
+    bottom: 3px;
+    background-color: $secondary-color;
+    opacity: 0.5;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
   }
 }
 

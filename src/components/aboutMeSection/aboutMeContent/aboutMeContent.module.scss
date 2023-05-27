@@ -11,17 +11,7 @@
     margin-top: 2rem;
     font-size: 1.4rem;
     &__item {
-      position: relative;
-      padding-left: 2rem;
-      margin-bottom: 1rem;
-
-      &::before {
-        content: "▹";
-        position: absolute;
-        left: 0px;
-        color: $secondary-color;
-        font-size: 2rem;
-      }
+      @include listStyle;
     }
   }
 }
