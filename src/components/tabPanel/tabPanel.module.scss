@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+.tabPanel {
+  &__title {
+    font-size: $h3-font-size;
+    margin-bottom: 0.8rem;
+  }
+
+  &__date {
+    font-family: $number-font-family;
+    margin-bottom: 1.6rem;
+    color: $secondary-font-color;
+    font-size: $h4-font-size;
+  }
+
+  &__list {
+    color: $secondary-font-color;
+    font-size: $h4-font-size;
+    list-style: none;
+    & li {
+      @include listStyle;
+      line-height: 2.6rem;
+    }
+    & :not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
