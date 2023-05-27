@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import NavLink from "../navLink/navLink";
+import NavLink from "./navLink/navLink";
 import Logo from "../logo/logo";
 import styles from "./navbar.module.scss";
 export default function Navbar() {
