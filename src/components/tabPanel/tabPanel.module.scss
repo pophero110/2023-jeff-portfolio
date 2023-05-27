@@ -18,7 +18,7 @@
     list-style: none;
     & li {
       @include listStyle;
-      line-height: 2.6rem;
+      line-height: $line-height;
     }
     & :not(:last-child) {
       margin-bottom: 1.6rem;

@@ -3,7 +3,7 @@
   font-size: $h3-font-size;
   width: 100%;
   color: $tertiary-font-color;
-  line-height: 2.6rem;
+  line-height: $line-height;
   &__skillsList {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));

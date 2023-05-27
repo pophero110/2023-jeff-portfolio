@@ -52,10 +52,20 @@ h3 {
   color: $secondary-color;
 }
 
+.text-hover-highlight:hover {
+  color: $secondary-color;
+}
+
 .text-hover-underline {
   @include textHoverUnderline;
 }
 
 button {
   border: none;
+}
+
+.section {
+  max-width: 132.8rem;
+  padding: 10rem 0;
+  margin: 0 auto;
 }
