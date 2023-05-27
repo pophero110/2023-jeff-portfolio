@@ -19,6 +19,7 @@ body {
   background: $primary-color;
   font-family: $primary-font-family;
   scroll-behavior: smooth;
+  counter-reset: section;
 }
 
 a {
@@ -49,4 +50,12 @@ h3 {
 
 .text-highlight {
   color: $secondary-color;
+}
+
+.text-hover-underline {
+  @include textHoverUnderline;
+}
+
+button {
+  border: none;
 }
