@@ -8,7 +8,7 @@ export default function AboutMeContent() {
         <a
           href="https://www.chowbus.com"
           target="_blank"
-          className="text-highlight"
+          className="text-highlight text-hover-underline"
         >
           Chowbus
         </a>
@@ -34,16 +34,24 @@ export default function AboutMeContent() {
       <p>
         Recently, I completed a{" "}
         <a
-          className="text-highlight"
+          className="text-highlight text-hover-underline"
+          target="_blank"
           href="https://generalassemb.ly/education/software-engineering-immersive"
         >
           Software Engineering Immersive bootcamp
         </a>{" "}
-        from General Assembly, gaining a solid foundation in technologies such
-        as Java, Spring, TypeScript, and Angular, while also developing
-        practical experience in building full-stack web applications and
-        sharpening my problem-solving and teamwork skills through hands-on
-        projects.
+        from{" "}
+        <a
+          className="text-highlight text-hover-underline"
+          target="_blank"
+          href="https://generalassemb.ly/education/software-engineering-immersive"
+        >
+          General Assembly
+        </a>
+        , gaining a solid foundation in technologies such as Java, Spring,
+        TypeScript, and Angular, while also developing practical experience in
+        building full-stack web applications and sharpening my problem-solving
+        and teamwork skills through hands-on projects.
       </p>
       <br />
       <p>
