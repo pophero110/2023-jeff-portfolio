@@ -1,0 +1,72 @@
+@import "../../../../styles/variables";
+.project {
+  &__overline {
+    margin: 10px 0px;
+    color: $secondary-color;
+    font-family: $number-font-family;
+    font-size: $h4-font-size;
+  }
+
+  &__title {
+    font-size: $h2-font-size;
+    margin: 0px 0px 20px;
+    transition: $transition;
+  }
+
+  &__description {
+    box-shadow: 0 10px 30px -15px $light-primary-color;
+    transition: $transition;
+    position: relative;
+    z-index: 2;
+    padding: 1.6rem;
+    border-radius: $border-radius;
+    background-color: #3e4245;
+    color: $secondary-font-color;
+    font-size: $h4-font-size;
+    text-align: start;
+    line-height: $line-height;
+  }
+
+  &__techList {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    margin: 25px 0px 10px;
+    padding: 0px;
+    list-style: none;
+    justify-content: flex-end;
+    font-size: $h4-font-size;
+    font-family: $number-font-family;
+    color: $tertiary-font-color;
+
+    & li {
+      margin: 0px 0px 5px 20px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+    margin-right: -10px;
+    color: $white;
+    justify-content: flex-end;
+    & a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      & svg {
+        transition: $transition;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &__github {
+    }
+    &__externalLink {
+    }
+  }
+}
