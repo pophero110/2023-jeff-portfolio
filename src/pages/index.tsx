@@ -9,6 +9,7 @@ import styles from "./index.module.scss";
 import ExperienceSection from "@/components/sections/experienceSection/experienceSection";
 import ProjectSection from "@/components/sections/projectSection/projectSection";
 import ContactSection from "@/components/sections/contactSection/contactSection";
+import Footer from "@/components/footer/footer";
 export default function Home() {
   return (
     <>
@@ -26,7 +27,7 @@ export default function Home() {
         <ProjectSection></ProjectSection>
         <ContactSection></ContactSection>
       </main>
-
+      <Footer></Footer>
       <SideElement left>
         <SocialLink></SocialLink>
       </SideElement>
