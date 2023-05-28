@@ -34,6 +34,12 @@ $transition: all 0.25s $timing-function;
 // Heigth & Width
 $tab-height: 5rem;
 
+// Breakpoints
+$desktop-sm: 1280px;
+$tablet-sm: 800px;
+$tablet: 1024px;
+$phone: 480px;
+
 @mixin numberStyle {
   color: $secondary-color;
   font-family: $number-font-family;
