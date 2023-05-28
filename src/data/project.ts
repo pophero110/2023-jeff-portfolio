@@ -28,7 +28,7 @@ export const projects: Project[] = [
       "Postman",
       "GitHub Project",
     ],
-    imageUrl: "./image/tic-tac-toe.png",
+    imageUrl: "./image/twitter.png",
     repoLink: "https://github.com/pophero110/Twitter-REST-API",
     externalLink: "https://github.com/users/pophero110/projects/5",
   },
