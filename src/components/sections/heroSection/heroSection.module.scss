@@ -1,6 +1,12 @@
+@import "../../../styles/variables";
+
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
 }
