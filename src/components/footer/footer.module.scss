@@ -15,4 +15,12 @@
   @media (max-width: $tablet) {
     padding: 2rem;
   }
+
+  &__socialLink {
+    display: none;
+
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
 }

@@ -3,7 +3,10 @@ import styles from "./footer.module.scss";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <SocialLink></SocialLink>
+      <div className={styles.footer__socialLink}>
+        <SocialLink></SocialLink>
+      </div>
+
       <a
         href="https://github.com/pophero110/Jeff-Ou-Portfolio"
         target="_blank"
