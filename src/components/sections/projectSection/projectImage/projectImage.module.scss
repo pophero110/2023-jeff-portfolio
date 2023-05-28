@@ -7,7 +7,12 @@
     transition: $transition;
     opacity: 70%;
     border-radius: $border-radius;
+
+    @media (max-width: $phone) {
+      height: 100%;
+    }
   }
+
   & img:hover {
     opacity: 100%;
   }

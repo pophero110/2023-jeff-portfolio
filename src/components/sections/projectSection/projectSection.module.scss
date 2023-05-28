@@ -3,6 +3,13 @@
 .projectSection {
   & &__wrapper:not(:last-child) {
     margin-bottom: 10rem;
+
+    @media (max-width: $desktop-sm) {
+      margin-bottom: 5rem;
+    }
+    @media (max-width: $phone) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__wrapper {
@@ -36,6 +43,34 @@
 
       &__leftContent {
         grid-area: 1 / 1 / -1 / 8;
+      }
+    }
+
+    @media (max-width: $phone) {
+      &__leftImage {
+        filter: blur(4px) brightness(50%);
+        grid-column: 1 / -1;
+        height: 100%;
+      }
+
+      &__rightContent {
+        z-index: 1;
+        text-align: left;
+        grid-column: 1 / -1;
+        padding: 20px 20px 15px;
+      }
+
+      &__rightImage {
+        filter: blur(4px) brightness(50%);
+        grid-column: 1 / -1;
+        height: 100%;
+      }
+
+      &__leftContent {
+        z-index: 1;
+        text-align: left;
+        grid-column: 1 / -1;
+        padding: 20px 20px 15px;
       }
     }
   }
