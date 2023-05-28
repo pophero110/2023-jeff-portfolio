@@ -12,4 +12,20 @@
   & :not(:last-child) {
     padding-bottom: 2.4rem;
   }
+
+  @media (max-width: $tablet) {
+    flex-direction: row;
+    margin-bottom: 2rem;
+    & a {
+      align-self: center;
+    }
+    & :not(:last-child) {
+      padding: 0;
+      margin-right: 2.4rem;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }
