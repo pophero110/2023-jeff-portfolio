@@ -1,3 +1,4 @@
+import HeadShot from "@/components/headshot/headshot";
 import styles from "./aboutMeContent.module.scss";
 
 export default function AboutMeContent() {

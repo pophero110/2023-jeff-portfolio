@@ -12,7 +12,7 @@ export default function SectionTitle({
       className={styles.sectionTitle}
       style={{
         fontSize: fontSize,
-        width: fontSize ? "fit-content" : "",
+        width: fontSize ? "fit-content" : "100%",
       }}
     >
       {title}

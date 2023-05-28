@@ -4,12 +4,13 @@
   width: 100%;
   color: $tertiary-font-color;
   line-height: $line-height;
+
   &__skillsList {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
     list-style: none;
     margin-top: 2rem;
-    font-size: 1.4rem;
+    font-size: $h4-font-size;
     &__item {
       @include listStyle;
     }

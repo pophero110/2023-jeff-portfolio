@@ -1,3 +1,7 @@
+@import "../../../../styles/variables";
 .experienceContent {
   display: flex;
+  @media (max-width: $phone-sm) {
+    flex-direction: column;
+  }
 }

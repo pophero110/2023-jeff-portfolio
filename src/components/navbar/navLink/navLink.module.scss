@@ -3,10 +3,9 @@
 .navLink {
   list-style: none;
   color: $primary-font-color;
-  font-size: 1.6rem;
+  font-size: $h4-font-size;
   display: flex;
   align-items: center;
-
   li {
     cursor: pointer;
   }
@@ -23,13 +22,17 @@
   a:not(:last-child) {
     margin-right: 5rem;
   }
-}
 
-.resumeLink {
-  display: inline-block;
-  @include buttonStyle;
-}
+  &__resumeLink {
+    display: inline-block;
+    @include buttonStyle;
+  }
 
-.number {
-  @include numberStyle;
+  &__number {
+    @include numberStyle;
+  }
+
+  @media (max-width: $tablet-sm) {
+    display: none;
+  }
 }

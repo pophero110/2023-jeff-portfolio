@@ -13,6 +13,9 @@
     width: fit-content;
     font-size: 7.2rem;
     margin-bottom: 3.2rem;
+    @media (max-width: $tablet) {
+      font-size: 5rem;
+    }
   }
   &__description {
     text-align: center;

@@ -21,13 +21,7 @@ export const projects: Project[] = [
     name: "Twitter REST APIs",
     description:
       "A backend-only application that provides REST APIs with functionalities similar to Twitter's backend and follows agile development practices, including brainstorming, entity identification, API design, user story creation, and a well-defined development process.",
-    techList: [
-      "Java",
-      "Spring Boot",
-      "PostgresSQL",
-      "Postman",
-      "GitHub Project",
-    ],
+    techList: ["Java", "Spring Boot", "PostgresSQL", "Postman", "IntelliJ"],
     imageUrl: "./image/twitter.png",
     repoLink: "https://github.com/pophero110/Twitter-REST-API",
     externalLink: "https://github.com/users/pophero110/projects/5",

@@ -1,6 +1,15 @@
+@import "../../../styles/variables";
+
 .projectSection {
   & &__wrapper:not(:last-child) {
     margin-bottom: 10rem;
+
+    @media (max-width: $desktop-sm) {
+      margin-bottom: 5rem;
+    }
+    @media (max-width: $phone) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__wrapper {
@@ -10,25 +19,59 @@
     align-items: center;
 
     &__leftImage {
-      grid-column: 1 / 9;
-      grid-area: 1 / 1 / -1 / 7;
+      grid-area: 1 / 1 / -1 / 9;
     }
 
     &__rightContent {
-      grid-column: 8 / -1;
       text-align: right;
       grid-area: 1 / 8 / -1 / -1;
     }
 
     &__rightImage {
-      grid-column: 5 / -1;
-      grid-area: 1 / 5 / -1 / 11;
+      grid-area: 1 / 5 / -1 / -1;
     }
 
     &__leftContent {
-      grid-column: 1 / 6;
       text-align: left;
       grid-area: 1 / 1 / -1 / 6;
+    }
+
+    @media (max-width: $desktop-sm) {
+      &__rightContent {
+        grid-area: 1 / 6 / -1 / -1;
+      }
+
+      &__leftContent {
+        grid-area: 1 / 1 / -1 / 8;
+      }
+    }
+
+    @media (max-width: $phone) {
+      &__leftImage {
+        filter: blur(4px) brightness(50%);
+        grid-column: 1 / -1;
+        height: 100%;
+      }
+
+      &__rightContent {
+        z-index: 1;
+        text-align: left;
+        grid-column: 1 / -1;
+        padding: 20px 20px 15px;
+      }
+
+      &__rightImage {
+        filter: blur(4px) brightness(50%);
+        grid-column: 1 / -1;
+        height: 100%;
+      }
+
+      &__leftContent {
+        z-index: 1;
+        text-align: left;
+        grid-column: 1 / -1;
+        padding: 20px 20px 15px;
+      }
     }
   }
 }

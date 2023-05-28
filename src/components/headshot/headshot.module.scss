@@ -15,9 +15,22 @@
 .headShot {
   width: 41.66666667%;
   height: 49.35185185%;
-  min-height: 53.3rem;
-  min-width: 55rem;
+  max-height: 53.3rem;
+  max-width: 55rem;
   position: relative;
+
+  @media (max-width: $tablet) {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    &__image {
+      filter: blur(10);
+    }
+  }
+
+  @media (max-width: $phone) {
+    width: 80%;
+  }
 
   &__image {
     object-fit: cover;
@@ -28,7 +41,9 @@
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: $border-radius;
   }
+
   &:hover &__image {
     transform: translate(0, -1rem);
   }

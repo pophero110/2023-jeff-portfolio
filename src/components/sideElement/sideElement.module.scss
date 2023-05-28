@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .sideElement {
   position: fixed;
   bottom: 0;
@@ -6,5 +8,9 @@
   }
   &__left {
     left: 2.5%;
+  }
+
+  @media (max-width: $tablet) {
+    display: none;
   }
 }

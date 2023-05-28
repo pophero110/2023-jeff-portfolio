@@ -1,0 +1,91 @@
+@import "../../../styles/variables";
+
+.navMenu {
+  display: none;
+  @media (max-width: $tablet-sm) {
+    display: block;
+  }
+  &__button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin-right: -15px;
+    padding: 15px;
+    border: 0px;
+    background-color: transparent;
+    text-transform: none;
+    transition-timing-function: linear;
+    transition-duration: 0.15s;
+    transition-property: opacity, filter;
+    &__hamBox {
+      display: inline-block;
+      position: relative;
+      width: 3rem;
+      height: 2.4rem;
+      &__inner {
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        width: 3rem;
+        height: 2px;
+        border-radius: $border-radius;
+        background-color: $secondary-color;
+        transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
+        transform: rotate(0deg);
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: auto;
+          right: 0px;
+          height: 2px;
+          border-radius: 4px;
+          background-color: $secondary-color;
+
+          width: 120%;
+          top: -10px;
+          opacity: 1;
+          transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+        }
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          left: auto;
+          right: 0px;
+          height: 2px;
+          border-radius: 4px;
+          background-color: $secondary-color;
+
+          width: 80%;
+          bottom: -10px;
+          transform: rotate(0deg);
+          transition: bottom 0.1s ease-in 0.25s,
+            transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+
+        &_active {
+          transition: transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+          transform: rotate(225deg);
+          &::before {
+            width: 100%;
+            top: 0px;
+            opacity: 0;
+            transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+          }
+          &::after {
+            width: 100%;
+            bottom: 0px;
+            transform: rotate(-90deg);
+            transition: bottom 0.1s ease-out,
+              transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+          }
+        }
+      }
+    }
+  }
+}

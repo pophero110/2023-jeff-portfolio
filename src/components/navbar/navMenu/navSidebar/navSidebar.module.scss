@@ -1,0 +1,58 @@
+@import "../../../../styles/variables";
+
+.navSidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: min(75vw, 400px);
+  height: 100vh;
+  outline: 0px;
+  background-color: $light-primary-color;
+  box-shadow: -10px 0px 30px -15px $light-primary-color;
+  z-index: 9;
+  transform: translateX(100vw);
+  visibility: hidden;
+  transition: $transition;
+  &__show {
+    transform: translateX(0vw);
+    visibility: visible;
+  }
+
+  &__navList {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 2.4rem;
+    color: $primary-font-color;
+    align-items: center;
+    a {
+      letter-spacing: 0.16rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & span {
+        font-size: 1.5rem;
+      }
+      &:hover {
+        text-shadow: $navLinkDropshadow;
+        color: $secondary-color;
+      }
+    }
+
+    a:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    &__resumeLink {
+      margin-top: 2rem;
+      font-size: 1.8rem;
+      @include buttonStyle;
+      padding: 1.6rem 3rem;
+    }
+  }
+}

@@ -19,8 +19,8 @@ $secondary-font-color: #c5c6c7;
 $tertiary-font-color: #929394;
 $h1-font-size: 7.2vw;
 $h2-font-size: 1.8vw;
-$h3-font-size: 1.2vw;
-$h4-font-size: 0.8vw;
+$h3-font-size: max(14px, 1.2vw);
+$h4-font-size: max(12px, 0.8vw);
 $line-height: 2.6rem;
 
 // Visual Effectsw
@@ -33,6 +33,13 @@ $transition: all 0.25s $timing-function;
 
 // Heigth & Width
 $tab-height: 5rem;
+
+// Breakpoints
+$desktop-sm: 1280px;
+$tablet-sm: 800px;
+$tablet: 1024px;
+$phone: 620px;
+$phone-sm: 480px;
 
 @mixin numberStyle {
   color: $secondary-color;

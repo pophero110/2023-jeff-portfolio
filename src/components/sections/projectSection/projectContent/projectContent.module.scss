@@ -11,6 +11,10 @@
     font-size: $h2-font-size;
     margin: 0px 0px 20px;
     transition: $transition;
+
+    @media (max-width: $phone) {
+      font-size: 1.8rem;
+    }
   }
 
   &__description {
@@ -50,6 +54,13 @@
         margin: 0px 20px 5px 0px;
       }
     }
+
+    @media (max-width: $phone) {
+      justify-content: flex-start;
+      & li {
+        margin: 0px 20px 5px 0px;
+      }
+    }
   }
 
   &__links {
@@ -62,6 +73,12 @@
     justify-content: flex-end;
 
     &__onLeft {
+      justify-content: flex-start;
+      margin-right: 0;
+      margin-left: -10px;
+    }
+
+    @media (max-width: $phone) {
       justify-content: flex-start;
       margin-right: 0;
       margin-left: -10px;
