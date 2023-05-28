@@ -28,6 +28,10 @@
     }
   }
 
+  @media (max-width: $phone) {
+    width: 80%;
+  }
+
   &__image {
     object-fit: cover;
     z-index: 2;
