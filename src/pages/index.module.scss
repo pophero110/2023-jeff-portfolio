@@ -1,5 +1,11 @@
+@import "../styles/variables";
+
 .main {
   padding: 0 15.41666667%;
   width: 100%;
   margin: 0 auto;
+
+  @media (max-width: $tablet-sm) {
+    padding: 0 10%;
+  }
 }
