@@ -1,8 +1,14 @@
 import styles from "./projectImage.module.scss";
-export default function ProjectImage() {
+export default function ProjectImage({
+  imageUrl,
+  link,
+}: {
+  imageUrl?: string;
+  link?: string;
+}) {
   return (
-    <a href="" className={styles.projectImage}>
-      <img src="./image/tic-tac-toe.png" alt="" />
+    <a href={link} className={styles.projectImage} target="_blank">
+      <img src={imageUrl} alt="Tic-tac-toe image" />
     </a>
   );
 }

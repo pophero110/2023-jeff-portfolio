@@ -43,6 +43,13 @@
     & li {
       margin: 0px 0px 5px 20px;
     }
+
+    &__onLeft {
+      justify-content: flex-start;
+      & li {
+        margin: 0px 20px 5px 0px;
+      }
+    }
   }
 
   &__links {
@@ -53,6 +60,13 @@
     margin-right: -10px;
     color: $white;
     justify-content: flex-end;
+
+    &__onLeft {
+      justify-content: flex-start;
+      margin-right: 0;
+      margin-left: -10px;
+    }
+
     & a {
       display: flex;
       justify-content: center;
@@ -63,10 +77,6 @@
         width: 20px;
         height: 20px;
       }
-    }
-    &__github {
-    }
-    &__externalLink {
     }
   }
 }

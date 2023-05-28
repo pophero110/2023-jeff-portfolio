@@ -1,19 +1,34 @@
 .projectSection {
+  & &__wrapper:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
     align-items: center;
 
-    &__image {
+    &__leftImage {
       grid-column: 1 / 9;
       grid-area: 1 / 1 / -1 / 7;
     }
 
-    &__content {
+    &__rightContent {
       grid-column: 8 / -1;
       text-align: right;
       grid-area: 1 / 8 / -1 / -1;
+    }
+
+    &__rightImage {
+      grid-column: 5 / -1;
+      grid-area: 1 / 5 / -1 / 11;
+    }
+
+    &__leftContent {
+      grid-column: 1 / 6;
+      text-align: left;
+      grid-area: 1 / 1 / -1 / 6;
     }
   }
 }

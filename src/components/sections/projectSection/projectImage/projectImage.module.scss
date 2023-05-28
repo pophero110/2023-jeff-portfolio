@@ -3,5 +3,12 @@
 .projectImage {
   & img {
     max-width: 88rem;
+    max-height: 51.6rem;
+    transition: $transition;
+    opacity: 70%;
+    border-radius: $border-radius;
+  }
+  & img:hover {
+    opacity: 100%;
   }
 }
