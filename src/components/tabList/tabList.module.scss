@@ -2,10 +2,13 @@
 .tabList {
   display: block;
   color: $white;
-  font-size: $h3-font-size;
+  font-size: max($h4-font-size, $h4-font-size + 2px);
   font-family: $number-font-family;
   margin-right: 2.4rem;
   position: relative;
+  & button {
+    font-size: inherit;
+  }
   &__tab {
     transition: $transition;
     display: flex;
