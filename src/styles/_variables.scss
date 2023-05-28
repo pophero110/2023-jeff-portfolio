@@ -38,7 +38,8 @@ $tab-height: 5rem;
 $desktop-sm: 1280px;
 $tablet-sm: 800px;
 $tablet: 1024px;
-$phone: 480px;
+$phone: 620px;
+$phone-sm: 480px;
 
 @mixin numberStyle {
   color: $secondary-color;
