@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import NavLink from "./navLink/navLink";
 import Logo from "../logo/logo";
 import styles from "./navbar.module.scss";
-import Link from "next/link";
+import NavMenu from "./navMenu/navMenu";
 export default function Navbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [navbarTranslate, setNavbarTranslate] = useState("translateY(0)");
@@ -30,10 +30,11 @@ export default function Navbar() {
   }, [prevScrollPos]);
   return (
     <nav className={styles.navbar} style={{ transform: navbarTranslate }}>
-      <a href={"/#hero"}>
+      <a href={"/"}>
         <Logo></Logo>
       </a>
       <NavLink></NavLink>
+      <NavMenu></NavMenu>
     </nav>
   );
 }
