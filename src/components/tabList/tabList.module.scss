@@ -6,6 +6,12 @@
   font-family: $number-font-family;
   margin-right: 2.4rem;
   position: relative;
+  @media (max-width: $phone-sm) {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 1rem;
+  }
   & button {
     font-size: inherit;
   }
@@ -23,6 +29,15 @@
     text-align: left;
     white-space: nowrap;
     cursor: pointer;
+
+    @media (max-width: $phone-sm) {
+      border-left: none;
+      border-bottom: 2px solid $secondary-font-color;
+      min-width: 12rem;
+      padding: 0px 20px;
+      justify-content: center;
+    }
+
     &:hover {
       color: $secondary-color;
       background-color: $light-primary-color;
