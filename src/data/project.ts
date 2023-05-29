@@ -41,7 +41,7 @@ export const projects: Project[] = [
     description:
       "Leaded and managed a frontend application that allow users to share tips (AKA posts) about their favorite locations around the world.",
     techList: ["TypeScript", "Angular", "Bootstrap", "Figma"],
-    repoLink: "https://github.com/pophero110/AudioGalaxy-stream-APIs",
+    repoLink: "https://github.com/pophero110/Wayfarer",
   },
   {
     name: "Rock Paper Scissors",
