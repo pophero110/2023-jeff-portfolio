@@ -42,8 +42,8 @@ export default function NavSidebar({
           />
           <a
             className={styles.navSidebar__navList__resumeLink}
-            href="#"
-            onClick={() => handleShowSidebar()}
+            href="./resume.pdf"
+            download
           >
             Resume
           </a>
