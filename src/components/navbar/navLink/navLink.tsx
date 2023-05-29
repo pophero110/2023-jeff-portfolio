@@ -7,7 +7,7 @@ export default function NavLink() {
         <NavLinkItem number="02." text="Experience" href="#experience" />
         <NavLinkItem number="03." text="Project" href="#project" />
         <NavLinkItem number="04." text="Contact" href="#contact" />
-        <a className={styles.navLink__resumeLink} href="#">
+        <a className={styles.navLink__resumeLink} href="./resume.pdf" download>
           Resume
         </a>
       </li>

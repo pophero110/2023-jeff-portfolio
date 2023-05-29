@@ -1,77 +1,23 @@
 @import "../../../styles/variables";
 
 .projectSection {
-  & &__wrapper:not(:last-child) {
-    margin-bottom: 10rem;
-
-    @media (max-width: $desktop-sm) {
-      margin-bottom: 5rem;
-    }
-    @media (max-width: $phone) {
-      margin-bottom: 2.5rem;
-    }
+  &__projectList {
+    list-style: none;
+    padding: 0px;
+    margin: 50px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    position: relative;
   }
 
-  &__wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 10px;
-    align-items: center;
-
-    &__leftImage {
-      grid-area: 1 / 1 / -1 / 9;
-    }
-
-    &__rightContent {
-      text-align: right;
-      grid-area: 1 / 8 / -1 / -1;
-    }
-
-    &__rightImage {
-      grid-area: 1 / 5 / -1 / -1;
-    }
-
-    &__leftContent {
-      text-align: left;
-      grid-area: 1 / 1 / -1 / 6;
-    }
+  &__title {
+    text-align: center;
+    white-space: nowrap;
+    margin: 1rem 0 5rem;
 
     @media (max-width: $desktop-sm) {
-      &__rightContent {
-        grid-area: 1 / 6 / -1 / -1;
-      }
-
-      &__leftContent {
-        grid-area: 1 / 1 / -1 / 8;
-      }
-    }
-
-    @media (max-width: $phone) {
-      &__leftImage {
-        filter: blur(4px) brightness(50%);
-        grid-column: 1 / -1;
-        height: 100%;
-      }
-
-      &__rightContent {
-        z-index: 1;
-        text-align: left;
-        grid-column: 1 / -1;
-        padding: 20px 20px 15px;
-      }
-
-      &__rightImage {
-        filter: blur(4px) brightness(50%);
-        grid-column: 1 / -1;
-        height: 100%;
-      }
-
-      &__leftContent {
-        z-index: 1;
-        text-align: left;
-        grid-column: 1 / -1;
-        padding: 20px 20px 15px;
-      }
+      font-size: 2.4rem;
     }
   }
 }
