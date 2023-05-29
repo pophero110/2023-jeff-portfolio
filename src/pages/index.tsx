@@ -7,9 +7,10 @@ import EmailLink from "@/components/sideElement/emailLink/emailLink";
 import AboutMeSection from "@/components/sections/aboutMeSection/aboutMeSection";
 import styles from "./index.module.scss";
 import ExperienceSection from "@/components/sections/experienceSection/experienceSection";
-import ProjectSection from "@/components/sections/projectSection/projectSection";
+import FeaturedProjectSection from "@/components/sections/featuredProjectSection/featuredProjectSection";
 import ContactSection from "@/components/sections/contactSection/contactSection";
 import Footer from "@/components/footer/footer";
+import ProjectSection from "@/components/sections/projectSection/projectSection";
 export default function Home() {
   return (
     <>
@@ -24,6 +25,7 @@ export default function Home() {
         <HeroSection></HeroSection>
         <AboutMeSection></AboutMeSection>
         <ExperienceSection></ExperienceSection>
+        <FeaturedProjectSection></FeaturedProjectSection>
         <ProjectSection></ProjectSection>
         <ContactSection></ContactSection>
       </main>
