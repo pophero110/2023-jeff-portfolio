@@ -42,7 +42,7 @@ export default function NavSidebar({
           />
           <a
             className={styles.navSidebar__navList__resumeLink}
-            href="./resume.pdf"
+            href="./jeff-ou-full-stack-engineer-resume.pdf"
             download
           >
             Resume
