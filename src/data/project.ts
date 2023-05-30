@@ -42,6 +42,7 @@ export const projects: Project[] = [
       "Leaded and managed a frontend application that allow users to share tips (AKA posts) about their favorite locations around the world.",
     techList: ["TypeScript", "Angular", "Bootstrap", "Figma"],
     repoLink: "https://github.com/pophero110/Wayfarer",
+    externalLink: "https://wayfarer-rouge.vercel.app",
   },
   {
     name: "Rock Paper Scissors",
