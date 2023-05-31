@@ -11,13 +11,13 @@ export interface JobDetail {
 export const jobDetails: JobDetail[] = [
   {
     id: 0,
-    position: "Software Engineering Immersive",
+    position: "Software Engineer Apprenticeship",
     company: "Interapt",
     workPeriod: "Mar 2023 - Jun 2023",
     bulletPoints: [
-      "Interapt efficiency of marketing campaigns by automating processes, resulting in a 25% increase in user engagement and a 15% increase in conversions",
-      "Interapt with cross-functional teams, including designers, product managers, and QA engineers to deliver software releases on time and with high quality",
-      "Interapt an integral role in the development of new features, successfully resolved 25 bugs, and refactored 1000 lines of code",
+      "Acted as a leader and mentor in two group projects, showcasing strong programming skills and project management skills",
+      "Utilized the principles of Agile, Extreme Programming, and Object-Oriented Programming (OOP) to drive the development of projects",
+      "Enhanced proficiency in Java, Spring Boot, and Angular to proficiently construct professional full-stack applications",
     ],
     companyDescription:
       "A food delivery platform providing authentic asian food to customers in North America",
