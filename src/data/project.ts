@@ -32,14 +32,14 @@ export const projects: Project[] = [
   {
     name: "Audio Galaxy Streaming APIs",
     description:
-      "Leaded and managed a backend-only application that provides REST APIs with functionalities similar to Spotify backend and follows agile development practices.",
+      "Led and managed a backend-only application that provides REST APIs with functionalities similar to Spotify backend and follows agile development practices.",
     techList: ["Java", "Spring Boot", "H2 Database", "JWT", "JUnit", "Mockito"],
     repoLink: "https://github.com/pophero110/AudioGalaxy-stream-APIs",
   },
   {
     name: "Wayfarer",
     description:
-      "Leaded and managed a frontend application that allow users to share tips (AKA posts) about their favorite locations around the world.",
+      "Led and managed a frontend application that allow users to share tips (AKA posts) about their favorite locations around the world.",
     techList: ["TypeScript", "Angular", "Bootstrap", "Figma"],
     repoLink: "https://github.com/pophero110/Wayfarer",
     externalLink: "https://wayfarer-rouge.vercel.app",
@@ -77,7 +77,7 @@ export const projects: Project[] = [
   },
   {
     name: "Letter.io",
-    description: "Built and designed letter writing assistance website",
+    description: "Built and designed a letter writing assistance website",
     techList: ["Next.js", "Figma", "Prisma", "MongoDB", "NextAuth", "Vercel"],
     repoLink: "https://github.com/pophero110/letterio-web",
     externalLink: "https://letterio-web.vercel.app/",
