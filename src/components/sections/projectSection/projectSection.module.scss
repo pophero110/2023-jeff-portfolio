@@ -11,6 +11,10 @@
     position: relative;
   }
 
+  &__projectList > li {
+    min-height: 275px; /* Set the desired minimum height for each row */
+  }
+
   &__title {
     text-align: center;
     white-space: nowrap;
