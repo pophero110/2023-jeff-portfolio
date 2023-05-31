@@ -11,7 +11,7 @@ export interface JobDetail {
 export const jobDetails: JobDetail[] = [
   {
     id: 0,
-    position: "Software Engineer Apprenticeship",
+    position: "Full Stack Software Engineering Student",
     company: "Interapt",
     workPeriod: "Mar 2023 - Jun 2023",
     bulletPoints: [
