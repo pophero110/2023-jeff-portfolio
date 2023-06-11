@@ -1,7 +1,12 @@
+import { srConfig } from "@/config";
+import useScrollReveal from "@/utils/useScrollReveal";
+import { useRef } from "react";
 import styles from "./navLink.module.scss";
 export default function NavLink() {
+  const sectionRef = useRef(null);
+  useScrollReveal(sectionRef, srConfig(400));
   return (
-    <ul className={styles.navLink}>
+    <ul ref={sectionRef} className={styles.navLink}>
       <li>
         <NavLinkItem number="01." text="About" href="#about" />
         <NavLinkItem number="02." text="Experience" href="#experience" />

@@ -1,8 +1,17 @@
 import SectionTitle from "@/components/sectionTitle/sectionTitle";
 import styles from "./contactSection.module.scss";
+import { srConfig } from "@/config";
+import useScrollReveal from "@/utils/useScrollReveal";
+import { useRef } from "react";
 export default function ContactSection() {
+  const sectionRef = useRef(null);
+  useScrollReveal(sectionRef, srConfig());
   return (
-    <section id="contact" className={styles.aboutSection + " section"}>
+    <section
+      ref={sectionRef}
+      id="contact"
+      className={styles.aboutSection + " section"}
+    >
       <div className={styles.aboutSection__wrapper}>
         <SectionTitle title="What's Next?" fontSize={"2rem"}></SectionTitle>
         <h2 className={styles.aboutSection__callout}>Get In Touch</h2>

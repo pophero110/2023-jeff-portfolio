@@ -3,10 +3,10 @@ import NavLink from "./navLink/navLink";
 import Logo from "../logo/logo";
 import styles from "./navbar.module.scss";
 import NavMenu from "./navMenu/navMenu";
+
 export default function Navbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [navbarTranslate, setNavbarTranslate] = useState("translateY(0)");
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
@@ -23,16 +23,13 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
   return (
     <nav className={styles.navbar} style={{ transform: navbarTranslate }}>
-      <a href={"/"}>
-        <Logo></Logo>
-      </a>
+      <Logo></Logo>
       <NavLink></NavLink>
       <NavMenu></NavMenu>
     </nav>
