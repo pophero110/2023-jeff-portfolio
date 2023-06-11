@@ -4,10 +4,29 @@ export interface Project {
   techList: string[];
   imageUrl?: string;
   repoLink?: string;
+  repoLink2?: string;
   externalLink?: string;
 }
 
 export const featureDProjects: Project[] = [
+  {
+    name: "Dungeon Chaos",
+    description:
+      "Full Stack Application: A single-player board-like game with turn-based fighting that is set within a grid of blocks, players strategically navigate through the dungeon, uncovering hidden pathways, encountering dangerous monsters, and collecting valuable loot",
+    techList: [
+      "Spring Boot",
+      "Angular",
+      "Ngrx",
+      "Cucumber",
+      "Jasmine",
+      "Postgres",
+    ],
+    imageUrl: "./image/dungeon-chaos-main-menu.png",
+    repoLink: "https://github.com/pophero110/Dungeon-Chaos-Frontend",
+    repoLink2: "https://github.com/pophero110/Dungeon-Chaos-Frontend",
+    externalLink:
+      "https://dungeon-chaos-frontend-rebb8y8q3-pophero110.vercel.app/",
+  },
   {
     name: "Tic-tac-toe",
     description:
