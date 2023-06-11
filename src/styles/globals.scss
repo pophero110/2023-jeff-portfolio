@@ -95,3 +95,22 @@ button {
 ::-webkit-scrollbar {
   width: 12px;
 }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 12px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  transform: translateY(100%);
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
