@@ -25,7 +25,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             <div className={styles.projectCard__top__link}>
               {project && (
                 <a
-                  href={project.repoLink}
+                  href={project.backendLink}
                   aria-label="GitHub Link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -74,7 +74,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           </div>
           <h3 className={styles.projectCard__title}>
             <a
-              href={project.repoLink}
+              href={project.backendLink}
               target="_blank"
               rel="noopener noreferrer"
             >

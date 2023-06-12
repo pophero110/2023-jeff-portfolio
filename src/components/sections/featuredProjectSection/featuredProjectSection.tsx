@@ -41,7 +41,9 @@ export default function FeaturedProjectSection() {
               <ProjectImage
                 imageUrl={project.imageUrl}
                 link={
-                  project.externalLink ? project.externalLink : project.repoLink
+                  project.externalLink
+                    ? project.externalLink
+                    : project.backendLink
                 }
               ></ProjectImage>
             </div>
