@@ -11,13 +11,7 @@ export default function ProjectContent({
     <div className={styles.project}>
       <p className={styles.project__overline}>Featured Project</p>
       <h3 className={styles.project__title + " text-hover-highlight"}>
-        <a
-          href="https://halcyon-theme.netlify.com/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          {project.name}
-        </a>
+        {project.name}
       </h3>
       <div className={styles.project__description}>
         <p>{project.description}</p>

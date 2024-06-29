@@ -34,8 +34,20 @@ export const featureDProjects: Project[] = [
     techList: ["JavaScript", "HTML", "SCSS", "Socket.IO", "Heroku"],
     imageUrl: "./image/tic-tac-toe.png",
     backendLink: "https://github.com/pophero110/Tic-tac-toe",
-    externalLink: "https://my-tic-tac-toe.herokuapp.com/",
+    externalLink: "https://tic-tac-toe-ten-alpha-76.vercel.app/",
   },
+  {
+    name: "Gem Match 3",
+    description:
+      "A classic match-3 puzzle game where players swap adjacent tiles to form a horizontal or vertical row of three or more identical tiles. The game is built using Phaser 3 for rendering and game logic, TypeScript for maintaining robust and scalable code, and Jest for unit testing.",
+    techList: ["TypeScript", "Jest", "Phaser 3"],
+    imageUrl: "./image/match-3.png",
+    backendLink: "https://github.com/pophero110/gem-match-3",
+    externalLink: "https://gem-match-3.vercel.app/",
+  },
+];
+
+export const projects: Project[] = [
   {
     name: "Twitter REST APIs",
     description:
@@ -43,11 +55,8 @@ export const featureDProjects: Project[] = [
     techList: ["Java", "Spring Boot", "PostgresSQL", "Postman", "IntelliJ"],
     imageUrl: "./image/twitter-2.png",
     backendLink: "https://github.com/pophero110/Twitter-REST-API",
-    externalLink: "https://github.com/users/pophero110/projects/5",
+    externalLink: "https://github.com/pophero110/Twitter-REST-API",
   },
-];
-
-export const projects: Project[] = [
   {
     name: "Audio Galaxy Streaming APIs",
     description:
