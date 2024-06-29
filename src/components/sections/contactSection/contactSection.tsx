@@ -22,6 +22,7 @@ export default function ContactSection() {
         </p>
         <a
           className={styles.aboutSection__contact}
+          target="_blank"
           href="mailto:jeffou.dev@gmail.com"
         >
           Say Hello
