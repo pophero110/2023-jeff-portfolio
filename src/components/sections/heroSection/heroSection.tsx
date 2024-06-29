@@ -10,7 +10,7 @@ export default function HeroSection() {
   return (
     <section ref={sectionRef} id="hero" className={styles.hero}>
       <HeroContent></HeroContent>
-      <HeadShot></HeadShot>
+      {/* <HeadShot></HeadShot> */}
     </section>
   );
 }

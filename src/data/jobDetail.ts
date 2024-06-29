@@ -10,7 +10,19 @@ export interface JobDetail {
 
 export const jobDetails: JobDetail[] = [
   {
-    id: 0,
+    id: 5,
+    position: "Software Engineer",
+    company: "Interapt & CVS",
+    workPeriod: "Jun 2023 - Present",
+    bulletPoints: [
+      "Developed large features, participated in design discussions, code reviews, and collaborated with cross-functional team",
+      "Mentored junior engineers, and ensured best practices in coding and design.",
+      "Enhanced proficiency in Java, Spring Boot, proficiently constructing enterprise applications",
+    ],
+    companyLink: "https://interapt.com/",
+  },
+  {
+    id: 4,
     position: "Full Stack Software Engineering Student",
     company: "Interapt",
     workPeriod: "Mar 2023 - Jun 2023",
@@ -21,11 +33,10 @@ export const jobDetails: JobDetail[] = [
     ],
     companyDescription:
       "A food delivery platform providing authentic asian food to customers in North America",
-    companyLink:
-      "https://generalassemb.ly/education/software-engineering-immersive",
+    companyLink: "https://interapt.com/",
   },
   {
-    id: 1,
+    id: 3,
     position: "Software Engineer",
     company: "Chowbus",
     workPeriod: "Mar 2022 - Nov 2022",
@@ -40,7 +51,7 @@ export const jobDetails: JobDetail[] = [
   },
 
   {
-    id: 3,
+    id: 2,
     position: "Software QA Analyst",
     company: "Chowbus",
     workPeriod: "Jan 2022 - Mar 2022",
@@ -53,9 +64,8 @@ export const jobDetails: JobDetail[] = [
       "A food delivery platform providing authentic asian food to customers in North America",
     companyLink: "https://www.chowbus.com",
   },
-
   {
-    id: 4,
+    id: 1,
     position: "Operation Manager",
     company: "Chowbus",
     workPeriod: "Aug 2021 - Dec 2021",

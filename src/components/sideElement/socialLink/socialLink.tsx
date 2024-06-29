@@ -10,13 +10,13 @@ export default function SocialLink() {
       <a href={socialLink.github} target="_blank">
         <GitHub></GitHub>
       </a>
-      <a
+      {/* <a
         href={socialLink.twitter}
         target="_blank"
         className={styles.socialLink__twitter}
       >
         <Twitter></Twitter>
-      </a>
+      </a> */}
     </div>
   );
 }

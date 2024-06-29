@@ -8,7 +8,7 @@ export default function TabPanel({ jobDetail }: { jobDetail: JobDetail }) {
         <span className="text-highlight">
           @{" "}
           <a
-            href="https://www.chowbus.com"
+            href={jobDetail.companyLink}
             target="_blank"
             className="text-hover-underline"
           >

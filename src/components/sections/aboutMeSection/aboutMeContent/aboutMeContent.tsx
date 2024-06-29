@@ -15,10 +15,11 @@ export default function AboutMeContent() {
         </a>
         , <span className="text-highlight">a startup</span> company which is an
         online food ordering, payment and delivery platform based in Chicago.
-        Initially, I joined the company as an Operation Manager in the
-        Operations team. During my free time, I dedicated myself to learning
-        programming through various resources like Udemy, YouTube, and books. I
-        also worked on personal projects to enhance my skills.
+        Initially, I joined the company as an{" "}
+        <span className="text-highlight">Operation Manage</span>. During my free
+        time, I dedicated myself to learning programming through various
+        resources like Udemy, YouTube, and books. I also worked on personal
+        projects to enhance my skills.
       </p>
       <br />
       <p>
@@ -33,7 +34,7 @@ export default function AboutMeContent() {
       </p>
       <br />
       <p>
-        Recently, I completed a{" "}
+        Later on, I completed a{" "}
         <a
           className="text-highlight text-hover-underline"
           target="_blank"
@@ -56,16 +57,46 @@ export default function AboutMeContent() {
       </p>
       <br />
       <p>
-        Here are a few of the technologies I have extensively used recently:
+        After completing the bootcamp, I joined{" "}
+        <a
+          className="text-highlight text-hover-underline"
+          target="_blank"
+          href="https://interapt.com/"
+        >
+          Interapt
+        </a>{" "}
+        as a <span className="text-highlight">Software Engineer</span>, where I
+        worked at{" "}
+        <a
+          className="text-highlight text-hover-underline"
+          target="_blank"
+          href="https://www.cvs.com/"
+        >
+          CVS
+        </a>{" "}
+        to develop microservices for integrating ServiceNow. and{" "}
+        <span className="text-highlight">mentored</span> junior software
+        engineers. In addition to mentoring junior software engineers, I played
+        a pivotal role in implementing major features and establishing best
+        practices in coding and design. I also authored comprehensive
+        documentation, including architectural diagrams, decision documents, and
+        cookbooks.
       </p>
+      <br />
+      <p>Here are the technologies I have extensively used recently:</p>
       <ul className={styles.aboutMeContent__skillsList}>
         {[
-          "TypeScript",
           "Java",
-          "Angular",
           "Spring Boot",
-          "Next.js",
+          "GitHub Actions",
+          "Azure",
+          "Splunk",
+          "AppDynamic",
+          "PostgreSQL",
+          "ServiceNow",
+          "Docker",
           "IntelliJ",
+          "Jira",
         ].map((skill, index) => (
           <li key={index} className={styles.aboutMeContent__skillsList__item}>
             {skill}

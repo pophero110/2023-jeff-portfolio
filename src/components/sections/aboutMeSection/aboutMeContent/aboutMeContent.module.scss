@@ -7,7 +7,7 @@
 
   &__skillsList {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: repeat(3, minmax(140px, 200px));
     list-style: none;
     margin-top: 2rem;
     font-size: $h4-font-size;
