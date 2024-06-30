@@ -29,8 +29,8 @@ export const featureDProjects: Project[] = [
   {
     name: "Tic-tac-toe",
     description:
-      "An interactive Tic-Tac-Toe game that provides two gameplay options: playing against an AI opponent or playing online with other players.",
-    techList: ["JavaScript", "HTML", "SCSS", "Socket.IO", "Heroku"],
+      "An interactive Tic-Tac-Toe game that provides two gameplay options: playing against an AI opponent",
+    techList: ["JavaScript", "HTML", "SCSS"],
     imageUrl: "./image/tic-tac-toe.png",
     frontendLink: "https://github.com/pophero110/Tic-tac-toe",
     externalLink: "https://tic-tac-toe-ten-alpha-76.vercel.app/",
