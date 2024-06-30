@@ -20,6 +20,7 @@ export const featureDProjects: Project[] = [
       "Cucumber",
       "Jasmine",
       "Postgres",
+      "Fly.io",
     ],
     imageUrl: "./image/dungeon-chaos-main-menu.png",
     backendLink: "https://github.com/pophero110/Dugneon-Chaos-Backend",
