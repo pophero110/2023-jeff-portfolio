@@ -29,7 +29,7 @@ export const featureDProjects: Project[] = [
   {
     name: "Tic-tac-toe",
     description:
-      "An interactive Tic-Tac-Toe game that provides two gameplay options: playing against an AI opponent",
+      "An interactive Tic-Tac-Toe game that provides two gameplay options: playing against an AI opponent or Player opponent",
     techList: ["JavaScript", "HTML", "SCSS"],
     imageUrl: "./image/tic-tac-toe.png",
     frontendLink: "https://github.com/pophero110/Tic-tac-toe",
