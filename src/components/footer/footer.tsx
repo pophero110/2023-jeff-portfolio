@@ -12,7 +12,7 @@ export default function Footer() {
         target="_blank"
         className="text-hover-highlight text-hover-underline"
       >
-        <div>Designed &amp; Built by Jeff Ou</div>
+        <div>Built by Jeff Ou</div>
       </a>
     </footer>
   );

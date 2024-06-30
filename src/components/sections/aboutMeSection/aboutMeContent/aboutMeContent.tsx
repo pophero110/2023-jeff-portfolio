@@ -74,13 +74,12 @@ export default function AboutMeContent() {
         >
           CVS
         </a>{" "}
-        to develop microservices for integrating ServiceNow. and{" "}
-        <span className="text-highlight">mentored</span> junior software
-        engineers. In addition to mentoring junior software engineers, I played
-        a pivotal role in implementing major features and establishing best
-        practices in coding and design. I also authored comprehensive
-        documentation, including architectural diagrams, decision documents, and
-        cookbooks.
+        to develop microservices for integrating ServiceNow. In addition to{" "}
+        <span className="text-highlight">mentoring</span> junior software
+        engineers, I played a pivotal role in implementing major features and
+        establishing best practices in coding and design. I also authored
+        comprehensive documentation, including architectural diagrams, decision
+        documents, and cookbooks.
       </p>
       <br />
       <p>Here are the technologies I have extensively used recently:</p>
@@ -96,6 +95,7 @@ export default function AboutMeContent() {
           "ServiceNow",
           "Docker",
           "IntelliJ",
+          "TypeScript",
           "Jira",
         ].map((skill, index) => (
           <li key={index} className={styles.aboutMeContent__skillsList__item}>
