@@ -16,10 +16,9 @@ export const featureDProjects: Project[] = [
     techList: [
       "Spring Boot",
       "Angular",
-      "Ngrx",
       "Cucumber",
       "Jasmine",
-      "Postgres",
+      "PostgreSQL",
       "Fly.io",
     ],
     imageUrl: "./image/dungeon-chaos-main-menu.png",
