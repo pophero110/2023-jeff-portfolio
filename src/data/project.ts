@@ -24,8 +24,7 @@ export const featureDProjects: Project[] = [
     imageUrl: "./image/dungeon-chaos-main-menu.png",
     backendLink: "https://github.com/pophero110/Dugneon-Chaos-Backend",
     frontendLink: "https://github.com/pophero110/Dungeon-Chaos-Frontend",
-    externalLink:
-      "https://dungeon-chaos-frontend-rebb8y8q3-pophero110.vercel.app/",
+    externalLink: "https://dungeon-chaos-frontend.vercel.app/",
   },
   {
     name: "Tic-tac-toe",
@@ -33,7 +32,7 @@ export const featureDProjects: Project[] = [
       "An interactive Tic-Tac-Toe game that provides two gameplay options: playing against an AI opponent or playing online with other players.",
     techList: ["JavaScript", "HTML", "SCSS", "Socket.IO", "Heroku"],
     imageUrl: "./image/tic-tac-toe.png",
-    backendLink: "https://github.com/pophero110/Tic-tac-toe",
+    frontendLink: "https://github.com/pophero110/Tic-tac-toe",
     externalLink: "https://tic-tac-toe-ten-alpha-76.vercel.app/",
   },
   {
@@ -42,7 +41,7 @@ export const featureDProjects: Project[] = [
       "A classic match-3 puzzle game where players swap adjacent tiles to form a horizontal or vertical row of three or more identical tiles. The game is built using Phaser 3 for rendering and game logic, TypeScript for maintaining robust and scalable code, and Jest for unit testing.",
     techList: ["TypeScript", "Jest", "Phaser 3"],
     imageUrl: "./image/match-3.png",
-    backendLink: "https://github.com/pophero110/gem-match-3",
+    frontendLink: "https://github.com/pophero110/gem-match-3",
     externalLink: "https://gem-match-3.vercel.app/",
   },
 ];
