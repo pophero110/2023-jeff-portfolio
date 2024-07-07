@@ -11,28 +11,15 @@ export interface JobDetail {
 export const jobDetails: JobDetail[] = [
   {
     id: 5,
-    position: "Software Engineer",
+    position: "Junior Software Engineer",
     company: "Interapt & CVS",
-    workPeriod: "Jun 2023 - Present",
+    workPeriod: "Mar 2023 - Present",
     bulletPoints: [
-      "Developed large features, participated in design discussions, code reviews, and collaborated with cross-functional team",
-      "Mentored junior engineers, and ensured best practices in coding and design.",
-      "Enhanced proficiency in Java, Spring Boot, proficiently constructing enterprise applications",
+      "Mentored a junior software engineer, providing guidance and support for professional development.",
+      "Enhanced API response time by 65% through the implementation of effective caching strategies.",
+      "Developed comprehensive documentation, including architectural diagrams, cookbooks, and decision documents.",
+      "Developed large-scale features, actively participated in design discussions, and conducted thorough code reviews.",
     ],
-    companyLink: "https://interapt.com/",
-  },
-  {
-    id: 4,
-    position: "Full Stack Software Engineering Student",
-    company: "Interapt",
-    workPeriod: "Mar 2023 - Jun 2023",
-    bulletPoints: [
-      "Acted as a leader and mentor in two group projects, showcasing strong programming skills and project management skills",
-      "Utilized the principles of Agile, Extreme Programming, and Object-Oriented Programming (OOP) to drive the development of projects",
-      "Enhanced proficiency in Java, Spring Boot, and Angular to proficiently construct professional full-stack applications",
-    ],
-    companyDescription:
-      "A food delivery platform providing authentic asian food to customers in North America",
     companyLink: "https://interapt.com/",
   },
   {

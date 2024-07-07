@@ -65,8 +65,8 @@ export default function AboutMeContent() {
         >
           Interapt
         </a>{" "}
-        as a <span className="text-highlight">Software Engineer</span>, where I
-        worked at{" "}
+        as a <span className="text-highlight">Junior Software Engineer</span>,
+        where I worked at{" "}
         <a
           className="text-highlight text-hover-underline"
           target="_blank"
@@ -75,8 +75,8 @@ export default function AboutMeContent() {
           CVS
         </a>{" "}
         to develop microservices for integrating ServiceNow. In addition to{" "}
-        <span className="text-highlight">mentoring</span> junior software
-        engineers, I played a pivotal role in implementing major features and
+        <span className="text-highlight">mentoring</span> a junior software
+        engineer, I played a pivotal role in implementing major features and
         establishing best practices in coding and design. I also authored
         comprehensive documentation, including architectural diagrams, decision
         documents, and cookbooks.
