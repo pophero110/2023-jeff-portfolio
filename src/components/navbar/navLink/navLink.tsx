@@ -12,14 +12,14 @@ export default function NavLink() {
         {/* <NavLinkItem number="02." text="Experience" href="#experience" /> */}
         {/* <NavLinkItem number="03." text="Project" href="#project" /> */}
         {/* <NavLinkItem number="04." text="Contact" href="#contact" /> */}
-        <a
+        {/* <a
           target="_blank"
           className={styles.navLink__resumeLink}
           href="https://docs.google.com/document/d/15foeP4ZZ0PIRturgtbvl5T_UPz8SziHzxIcV5QzPwKk/edit?usp=sharing"
           download
         >
           Resume
-        </a>
+        </a> */}
       </li>
     </ul>
   );
