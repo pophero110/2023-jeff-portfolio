@@ -22,9 +22,9 @@ export default function Home() {
       </Head>
       <Navbar></Navbar>
       <main className={styles.main}>
-        <HeroSection></HeroSection>
-        <AboutMeSection></AboutMeSection>
-        <ExperienceSection></ExperienceSection>
+        {/* <HeroSection></HeroSection> */}
+        {/* <AboutMeSection></AboutMeSection> */}
+        {/* <ExperienceSection></ExperienceSection> */}
         <FeaturedProjectSection></FeaturedProjectSection>
         <ProjectSection></ProjectSection>
         <ContactSection></ContactSection>

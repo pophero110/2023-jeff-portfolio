@@ -8,13 +8,14 @@ export default function NavLink() {
   return (
     <ul ref={sectionRef} className={styles.navLink}>
       <li>
-        <NavLinkItem number="01." text="About" href="#about" />
-        <NavLinkItem number="02." text="Experience" href="#experience" />
-        <NavLinkItem number="03." text="Project" href="#project" />
-        <NavLinkItem number="04." text="Contact" href="#contact" />
+        {/* <NavLinkItem number="01." text="About" href="#about" /> */}
+        {/* <NavLinkItem number="02." text="Experience" href="#experience" /> */}
+        {/* <NavLinkItem number="03." text="Project" href="#project" /> */}
+        {/* <NavLinkItem number="04." text="Contact" href="#contact" /> */}
         <a
+          target="_blank"
           className={styles.navLink__resumeLink}
-          href="./jeff-ou-full-stack-engineer-resume.pdf"
+          href="https://docs.google.com/document/d/15foeP4ZZ0PIRturgtbvl5T_UPz8SziHzxIcV5QzPwKk/edit?usp=sharing"
           download
         >
           Resume
